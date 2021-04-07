@@ -13,4 +13,4 @@ Im Ruhrgebiet ist die "kurze Fuffzehn" der Inbegriff von "nicht lange Abwarten" 
 
 Die thematische Bandbreite ist hoch - es geht vom Smart Home über Marvel wieder zurück in die Küche und um alles und nichts. Wie das Pärchen am Nebentisch bei deinem Lieblingsitaliener, welches sich ein wenig zu laut unterhält.
 
-![Die Psycho und der Geek - Podcast Logo](https://lcdn.letscast.fm/media/podcast/b030b024/artwork-300x300.png)
+[![Die Psycho und der Geek - Podcast Logo](https://lcdn.letscast.fm/media/podcast/b030b024/artwork-300x300.png)](https://www.diepsychounddergeek.de)

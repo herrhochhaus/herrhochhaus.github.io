@@ -5,11 +5,11 @@ categories: [podcast, technik]
 excerpt: Das Rodecaster Pro nimmt Podcasts ganz ohne Computer auf. Allerdings gibt es ein paar Kniffe, die im Workflow etwas Handarbeit erfordern.
 ---
 
-Das [Rodecaster Pro](https://de.rode.com/rodecasterpro) ist die eierlegende Wollmilchsau für Podcaster:innen. Bis zu vier Mikrofone lassen sich direkt an das Gerät anschließen. Via USB, Bluetooth oder Kabel lassen sich Computer und Telefon anschließen und acht farbige  Tasten dienen als Soundboard.
+Das [Rodecaster Pro](https://de.rode.com/rodecasterpro) ist die eierlegende Wollmilchsau für Podcaster:innen. Bis zu vier Mikrofone lassen sich direkt an das Gerät anschließen. Via USB, Bluetooth oder Kabel lassen sich Computer und Telefon anschließen und acht farbige Tasten dienen als Soundboard.
 
 ![Rodecaster Pro mit zwei Mikrofonen](/images/rodecasterpro.jpg)
 
-Summa summarum schreibt das Rodecaster in die aufgenommenen WAV-Dateien 14 (in Worten: Vierzehn) Spuren:
+Summa summarum schreibt das Rodecaster in die aufgenommenen WAV-Dateien 14 (in Worten: **Vierzehn!**) Spuren:
 
 1. Main links
 1. Main rechts
@@ -53,7 +53,7 @@ Die nächsten beiden Schritte lassen sich in einem Rutsch ausführen. Hierzu ben
 $ brew install sox
 ```
 
-Ich habe ein Script geschrieben ([findet sich auch auf Github](https://gist.github.com/yauh/2afe3f6b6d05686d69efce363d9fa1cb)), was mittels sox zunächst alle Spuren der WAV-Datei separiert (_extractChannel_) und dann pro Spur alle Takes nimmt und miteinander verbindet (_concatTakes_).
+Mit etwas Hilfe aus dem [Sendegate](https://sendegate.de/t/workflow-fuer-arbeit-mit-mehrspurigen-wav-dateien/13427/5?u=herrhochhaus) habe ein Script geschrieben ([findet sich auch auf Github](https://gist.github.com/yauh/2afe3f6b6d05686d69efce363d9fa1cb)), was mittels sox zunächst alle Spuren der WAV-Datei separiert (_extractChannel_) und dann pro Spur alle Takes nimmt und miteinander verbindet (_concatTakes_).
 
 ```bash
 #!/bin/bash
@@ -155,14 +155,12 @@ Das Script nimmt sich alle WAV-Dateien in alphabetischer Reihenfolge vor und erz
 
 ![Das Shell-Script in Action](/images/rodecasterflow-2.png)
 
-Wenn das Script durch ist, bleiben exakt 14 FLAC-Dateien übrig (das ist das Standardformat für Ultraschall 5, daher keine WAV-Dateien).
+Wenn das Script durch ist, bleiben exakt 14 FLAC-Dateien übrig (das ist das Standardformat für Ultraschall 5, daher keine WAV-Dateien), ganz egal, in wie viele Dateien das Rodecaster die Aufnahme aufgrund der Speichergrenze aufteilen musste.
 
 ![WAV-Dateien und Shell-Script](/images/rodecasterflow-3.png)
 
 ### Import in Ulraschall
 
-Wenn die Aufnahme mit drei Teilnehmern erfolgt ist, reicht es eigentlich aus, die Dateien 3, 4 und 5 (Mikrofon 1-3) in Ultraschall (oder jede andere [DAW](https://www.delamar.de/musiksoftware/podcast-software-51742/) zu importieren.
+Wenn die Aufnahme mit drei Teilnehmern erfolgt ist, reicht es eigentlich aus, die Dateien 03, 04 und 05 (Mikrofon 1-3) in Ultraschall (oder jede andere [DAW](https://www.delamar.de/musiksoftware/podcast-software-51742/) zu importieren. Wenn auch ein Teilnehmer via TRRS-Kabel dazugeschaltet war, entsprechend auch die Dateien 09 und 10 in die Schnittsoftware ziehen.
 
-Im Grunde sollten sowohl das Script als auch die resultierenden Dateien ausreichend selbsterklärend sein.
-
-Viel Spaß mit diesem Workflow!
+Im Grunde sollten sowohl das Script als auch die resultierenden Dateien ausreichend selbsterklärend sein. Ab hier kann dann entspannt geschnitten, gemastert und das finale Ergebnis erstellt werden.

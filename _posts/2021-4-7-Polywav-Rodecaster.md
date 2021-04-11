@@ -5,9 +5,9 @@ categories: [podcast, technik]
 excerpt: Das Rodecaster Pro nimmt Podcasts ganz ohne Computer auf. Allerdings gibt es ein paar Kniffe, die im Workflow etwas Handarbeit erfordern.
 ---
 
-Das [Rodecaster Pro](https://de.rode.com/rodecasterpro) ist die eierlegende Wollmilchsau für Podcaster:innen. Bis zu vier Mikrofone lassen sich direkt an das Gerät anschließen. Via USB, Bluetooth oder Kabel lassen sich Computer und Telefon anschließen und acht farbige  Tasten dienen als Soundboard. 
+Das [Rodecaster Pro](https://de.rode.com/rodecasterpro) ist die eierlegende Wollmilchsau für Podcaster:innen. Bis zu vier Mikrofone lassen sich direkt an das Gerät anschließen. Via USB, Bluetooth oder Kabel lassen sich Computer und Telefon anschließen und acht farbige  Tasten dienen als Soundboard.
 
-![Rodecaster Pro mit zwei Mikrofonen](/images/rodecasterflow-0.jpg)
+![Rodecaster Pro mit zwei Mikrofonen](/images/rodecasterpro.jpg)
 
 Summa summarum schreibt das Rodecaster in die aufgenommenen WAV-Dateien 14 (in Worten: Vierzehn) Spuren:
 
@@ -163,6 +163,6 @@ Wenn das Script durch ist, bleiben exakt 14 FLAC-Dateien übrig (das ist das Sta
 
 Wenn die Aufnahme mit drei Teilnehmern erfolgt ist, reicht es eigentlich aus, die Dateien 3, 4 und 5 (Mikrofon 1-3) in Ultraschall (oder jede andere [DAW](https://www.delamar.de/musiksoftware/podcast-software-51742/) zu importieren.
 
-Im Grunde sollten sowohl das Script als auch die resultierenden Dateien ausreichend selbsterklärend sein. 
+Im Grunde sollten sowohl das Script als auch die resultierenden Dateien ausreichend selbsterklärend sein.
 
 Viel Spaß mit diesem Workflow!

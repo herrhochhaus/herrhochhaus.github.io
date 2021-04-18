@@ -7,6 +7,7 @@
 
 @import "reset";
 @import "variables";
+@import "gpxviewer";
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -488,37 +489,6 @@ body:after {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
 }
-
-// gpxviewer styles
-figure {
-   margin:0;
-   padding:0;
- }
-
-#gpxviewer {
-   display: grid;
-   gap: .3em;
-   grid-template-columns: repeat(auto-fit, minmax(15em, 1fr	));
-}
-
-#map {
-  height:66vh;
-}
-
-#map_profiles {
-  height:100vh;
-}
-
-#map_hp {
-   height:calc((100% + 64px)/3);
-   margin-top:10px
-}
-
-#map_sp {
-  height:calc((100% + 64px)/3);
-  margin-top:-37px
-}
-
 
 /* --------------------------------
 

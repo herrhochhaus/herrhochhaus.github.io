@@ -22,6 +22,7 @@ Definitiv eine schöne, aber keine einsame Strecke.
 |Distanz          | 20 km          |
 |Höhenmeter       | 637m           |
 |Dauer            | ca. 4,5h       |
+|Download         | [NRW_Langenberg1_20km.gpx](/tracks/NRW_Langenberg1_20km.gpx) |
 
 ## Karte und Höhenprofil
 

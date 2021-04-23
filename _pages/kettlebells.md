@@ -4,7 +4,7 @@ title: Kettlebells
 permalink: /kettlebells/
 ---
 
-Hir kommt demnächst mehr zu meinem Kettlebell-Training.
+Hier kommt demnächst mehr zu meinem Kettlebell-Training.
 
 ## Simple & Sinister
 

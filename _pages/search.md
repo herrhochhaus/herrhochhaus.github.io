@@ -4,6 +4,9 @@ title: Suche
 permalink: /search/
 ---
 
+Hier kannst du die Titel der Blogbeiträge durchsuchen oder zur <a href="{{ site.baseurl }}/categories">Übersicht der Blogbeiträge nach Kategorien wechseln</a>.
+
+
 <div id="search-container">
     <input type="text" id="search-input" placeholder="Durchsuche die Einträge...">
     <ul id="results-container"></ul>

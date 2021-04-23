@@ -15,3 +15,9 @@ Wenn ich nicht arbeite, dann interessiere ich mich für Gadgets, Kettlebells, Mu
 ## Über diese Seite
 
 Nach diversen Blogsystemen (ich habe quasi alles von [Textpattern](https://textpattern.com) über [Wordpress](https://www.wordpress.com) und [Ghost](https://ghost.org) bis hin zu [Tumblr](https://www.tumblr.com) und [Medium](https://medium.com) benutzt) bin ich inzwischen bei [Jekyll](https://jekyllrb.com) und [GitHub Pages](https://pages.github.com) gelandet. Als Editor nutze ich [MacDown](https://macdown.uranusjr.com) und das wunderbare [iA Writer](https://ia.net/de/writer).
+
+## Impressum
+
+Diese Seite wird betrieben von [Stephan Hochhaus](mailto:mail@herrhochhaus.de).
+
+Wanderbeiträge binden Daten von [OpenStreetMap](https://www.openstreetmap.de) ein.

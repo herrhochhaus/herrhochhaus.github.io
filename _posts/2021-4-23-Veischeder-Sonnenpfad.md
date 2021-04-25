@@ -9,7 +9,7 @@ Am ersten Montag in den Osterferien habe ich mir freigenommen und das gute Wande
 
 Beginnen kann man die Strecke an diversen Wanderparkplätzen, ich habe in der Einsiedelei in Lennestadt geparkt und bin im Uhrzeigersinn der Streckenmarkierung gefolgt. Wer lieber  Höhenmeter im ersten Teil der Strecke haben möchte, sollte vielleicht gegen den Uhrzeigersinn starten, für mich war der zweite Teil - nicht nur aufgrund der Streckenlänge - anstrengender.
 
-![Herr Hochhaus schreibt](/images/veischedersonnenbank.jpg){: style="float: right; margin-right: 1em;"}
+![Pause mit Blick ins Tal](/images/veischedersonnenbank.jpg){: style="float: right; margin-right: 1em;"}
 
 Auf der gesamten Strecke begegnet man relativ wenig zivilisierten Gegenden, viel Wald und reichlich Natur sorgen dank klarer Auszeichnung (weißes V auf schwarzem Grund) des Wegs für ein herrliches Wandererlebnis.
 

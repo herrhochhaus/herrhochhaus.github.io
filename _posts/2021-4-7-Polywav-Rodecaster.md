@@ -159,7 +159,7 @@ Wenn das Script durch ist, bleiben exakt 14 FLAC-Dateien übrig (das ist das Sta
 
 ![WAV-Dateien und Shell-Script](/images/rodecasterflow-3.png)
 
-### Import in Ulraschall
+### Import in Ultraschall
 
 Wenn die Aufnahme mit drei Teilnehmern erfolgt ist, reicht es eigentlich aus, die Dateien 03, 04 und 05 (Mikrofon 1-3) in Ultraschall (oder jede andere [DAW](https://www.delamar.de/musiksoftware/podcast-software-51742/) zu importieren. Wenn auch ein Teilnehmer via TRRS-Kabel dazugeschaltet war, entsprechend auch die Dateien 09 und 10 in die Schnittsoftware ziehen.
 

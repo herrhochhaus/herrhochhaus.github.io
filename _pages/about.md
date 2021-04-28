@@ -4,7 +4,11 @@ title: Über mich
 permalink: /about/
 ---
 
-Hi, mein Name ist Hochhaus und seit über 20 Jahren schreibe ich mal nützliche und mal eher belanglose Dinge ins World Wide Web.
+> [The reasonable man adapts himself to the world: the unreasonable one persists in trying to adapt the world to himself.
+Therefore all progress depends on the unreasonable man.
+](https://www.goodreads.com/quotes/536961-the-reasonable-man-adapts-himself-to-the-world-the-unreasonable)
+
+Hi, mein Name ist Hochhaus und seit über 20 Jahren schreibe ich mal nützliche und mal belanglose Dinge ins World Wide Web. Bisweilen findet das jemand nützlich und freut sich vielleicht. 
 
 ![Herr Hochhaus schreibt](/images/herrhochhausschreibt.png){: style="float: left; margin-right: 1em;"}
 

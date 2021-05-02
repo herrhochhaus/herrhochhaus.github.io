@@ -38,7 +38,7 @@ Wenngleich die Strecke kein offizieller Premium-Wanderweg ist und die Nähe zur 
 |Distanz          | 20 km          |
 |Höhenmeter       | 572m           |
 |Dauer            | ca. 4,5h       |
-|Download         | [NRW_Sonnenpfad_37km.gpx](/tracks/NRW_Radevormwald_20km.gpx) |
+|Download         | [NRW_Radevormwald_20km.gpx](/tracks/NRW_Radevormwald_20km.gpx) |
 
 ## Karte und Höhenprofil
 

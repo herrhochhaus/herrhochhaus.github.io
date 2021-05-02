@@ -7,7 +7,7 @@ excerpt: Das Rodecaster Pro nimmt Podcasts ganz ohne Computer auf. Allerdings gi
 
 Das [Rodecaster Pro](https://de.rode.com/rodecasterpro) ist die eierlegende Wollmilchsau für Podcaster:innen. Bis zu vier Mikrofone lassen sich direkt an das Gerät anschließen. Via USB, Bluetooth oder Kabel lassen sich Computer und Telefon anschließen und acht farbige Tasten dienen als Soundboard.
 
-![Rodecaster Pro mit zwei Mikrofonen](/images/rodecasterpro.jpg)
+{% include lightbox.html src="rodecasterpro.jpg" data="group" title="Rodecaster Pro mit zwei Mikrofonen" %}
 
 Summa summarum schreibt das Rodecaster in die aufgenommenen WAV-Dateien 14 (in Worten: **Vierzehn!**) Spuren:
 
@@ -142,7 +142,7 @@ fi
 
 Script und WAV-Dateien kommen in dasselbe Verzeichnis.
 
-![WAV-Dateien und Shell-Script](/images/rodecasterflow-1.png)
+{% include lightbox.html src="rodecasterflow-1.png" data="group" title="WAV-Dateien und Shell-Script" %}
 
 Im Terminal dann in das Verzeichnis wechseln und das Script ausführen.
 
@@ -153,11 +153,11 @@ $ bash extract_rodecaster_polywav.sh
 ```
 Das Script nimmt sich alle WAV-Dateien in alphabetischer Reihenfolge vor und erzeugt pro Datei 14 FLAC-Dateien.
 
-![Das Shell-Script in Action](/images/rodecasterflow-2.png)
+{% include lightbox.html src="rodecasterflow-2.png" data="group" title="Das Shell-Script in Action" %}
 
 Wenn das Script durch ist, bleiben exakt 14 FLAC-Dateien übrig (das ist das Standardformat für Ultraschall 5, daher keine WAV-Dateien), ganz egal, in wie viele Dateien das Rodecaster die Aufnahme aufgrund der Speichergrenze aufteilen musste.
 
-![WAV-Dateien und Shell-Script](/images/rodecasterflow-3.png)
+{% include lightbox.html src="rodecasterflow-3.png" data="group" title="WAV-Dateien und Shell-Script" %}
 
 ### Import in Ultraschall
 

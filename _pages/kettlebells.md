@@ -8,7 +8,8 @@ Hier kommt demnächst mehr zu meinem Kettlebell-Training.
 
 ## Simple & Sinister
 
-![Herr Hochhaus schreibt](/images/kbtimelesscheatsheetthumb.jpg){: style="float: right; margin-right: 1em;"}
+{% include lightbox.html src="kbtimelesscheatsheetthumb.jpg" data="group" title="Timeless Simple Cheat Sheet" %}{: style="float: right; margin-right: 1em; max-width: 250px;"}
+
 
 Der Trainingsplan für [Simple and Sinister](https://www.amazon.de/Kettlebell-Simple-Sinister-Revised-Updated-ebook/dp/B07ZQKWMKR) ist genau das: leicht und schnell zu lernen. Nach einem kurzen Warm-Up besteht es nur aus 2 Übungen und kann in etwa einer halben Stunde gut absolviert werden. Inklusive Warm-Up und Stretching. Daher empfiehlt Pavel, der Vater des Trainingsplans, häufiges Training mit 6 Einheiten pro Woche.
 

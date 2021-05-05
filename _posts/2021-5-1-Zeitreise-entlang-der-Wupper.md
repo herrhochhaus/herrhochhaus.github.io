@@ -7,17 +7,17 @@ excerpt: Wir starten im Stadtkern von Radevormwald und was zunächst wie eine la
 
 Am Tag der Arbeit haben wir bei sonnigem Wetter und knapp zweistelligen Temperaturen einen Ausflug nach [Radevormwald](https://www.tourismus-radevormwald.de/) (direkt neben Wuppertal) gemacht und sind von dort etwa 20 Kilometer im Uhrzeigersinn gewandert. Vorweg: Die Strecke war absolut lohnenswert, ein Highlight jagte das nächste.
 
-Mitten in der Radevormwalder Innenstadt parken wir - direkt am Rathaus bietet sich an - und der erste Teil der Strecke ist trügerisch. Es geht durch eine mitteldeutsche Kleinstadt und der Reiz der Tour hält sich auf den ersten 2 Kilometern noch in Grenzen.
+Mitten in der Radevormwalder Innenstadt parken wir - der Parkplatz direkt am Rathaus bietet sich an - und der erste Teil der Strecke ist trügerisch. Es geht durch eine mitteldeutsche Kleinstadt und der Reiz der Tour hält sich auf den ersten 2 Kilometern noch in Grenzen.
 
 {% include lightbox.html src="radevormwald1.jpg" data="group" title="Entlang der Wuppertalsperre" %}{: style="float: right; margin-right: 1em; max-width: 250px;"}
 
-Das Höhenprofil zeigt es, Radevormwald trägt den Titel "Stadt auf der Höhe" zurecht. Zwei Drittel der Strecke geht es mehr oder weniger sanft bergab und nur gelegentlich kommt ein Anstieg. Insgesamt ist die Strecke nicht zu anspruchsvoll, aber durch herausfordernd, so dass wenige Spaziergänger und Kinderwagen-Ausflügler den Weg kreuzen. Nach guten 6 Kilometern kommt das erste Highlight: [die Wuppertalsperre](https://www.wupperverband.de/unsere-anlagen/talsperren/wupper-talsperre).
+Das Höhenprofil zeigt es, Radevormwald trägt den Titel "Stadt auf der Höhe" zurecht. Zwei Drittel der Strecke geht es mehr oder weniger sanft bergab und nur gelegentlich kommt ein Anstieg. Insgesamt ist die Strecke durch einen Ronja-Räubertochter-Wald nicht zu anspruchsvoll, aber streckenweise doch durchaus herausfordernd, so dass wenige Spaziergänger und Kinderwagen-Ausflügler den Weg kreuzen. Nach guten 6 Kilometern dann das erste Highlight: [die Wuppertalsperre](https://www.wupperverband.de/unsere-anlagen/talsperren/wupper-talsperre).
 
-Entgegen meiner Erwartungen ging es nicht platt neben dem Ufer her, sondern ebenfalls mit Anstiegen durchsetzt. Belohnt wird man hier jedoch durch absolut traumhafte Ausblicke aufs Wasser, die Erinnerungen an Schweden wecken. Wären da nicht die zahlreichen Brücken und sichtbaren Bauwerke.
+Entgegen meiner Erwartungen ging es nicht platt neben dem Ufer her, sondern ebenfalls mit Anstiegen durchsetzt. Belohnt wird man hier jedoch durch absolut traumhafte Ausblicke aufs Wasser, die Erinnerungen an Schweden wecken. Wären da nicht die zahlreichen Brücken und gut sichtbaren Strommasten.
 
 {% include lightbox.html src="radevormwald2.jpg" data="group" title="Zwischendurch idyllische Waldabschnitte" %}{: style="float: left; margin-right: 1em; max-width: 250px;"}
 
-Ich wollte die Talsperre schon als Highlight abhaken und den Rest einfach abwandern, doch dann kamen abwechselnd traumhafte Waldwege und Throwbacks in die Hochzeit der Tuchmacherei entlang der Wupper. Entlang der verlassenen Bahnstrecke, die zum Re-Enactment von Szenen aus [Stand by me](https://www.cinema.de/film/stand-by-me-das-geheimnis-eines-sommers,1326283.html) einlädt, gelangt man zum [Museumsbahnhof Dahlhausen](https://de.wikipedia.org/wiki/Museumsbahnhof_Dahlhausen_(Wupper)). Der Name trügt, hier wird kein Eintritt fällig, man stolpert plötzlich herein und sieht sich einer antiken Dampflok gegenüber.
+Wir wollten die Talsperre schon als einziges Highlight abhaken und den Rest brav abwandern, doch dann kamen abwechselnd traumhafte Waldwege und Throwbacks in die Hochzeit der Tuchmacherei entlang der Wupper. Entlang der verlassenen Bahnstrecke, die zum Re-Enactment von Szenen aus [Stand by me](https://www.cinema.de/film/stand-by-me-das-geheimnis-eines-sommers,1326283.html) einlädt, gelangen wir zum [Museumsbahnhof Dahlhausen](https://de.wikipedia.org/wiki/Museumsbahnhof_Dahlhausen_(Wupper)). Der Name trügt, hier wird kein Eintritt fällig, man stolpert plötzlich herein (und ebenso flott wieder heraus) und sieht sich einer antiken Dampflok gegenüber.
 
 {% include pullquote.html quote="Take a little walk to the edge of town and go across the tracks where the viaduct looms,
 [...]

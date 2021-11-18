@@ -1,11 +1,11 @@
 // gra_svg
-// Version vom 24. 2. 2021
+// Version vom 22. 5. 2021
 // Jürgen Berkemeier
 // www.j-berkemeier.de
 
 "use strict";
 
-console.info("gra_svg vom 24. 2. 2021");
+console.info("gra_svg vom 22. 5. 2021");
 
 var JB = window.JB || {};
 
@@ -140,7 +140,6 @@ JB.grafik = function(grafikelement) {
 		svg.appendChild(stext);
 		var textLength = stext.getComputedTextLength();
 		svg.removeChild(stext);
-		console.log(text,stext,textLength);
 		return textLength;
 	} // getTextWidth
 

@@ -2,7 +2,7 @@
 // Jürgen Berkemeier
 // www.j-berkemeier.de
 // Platz für weitere Definitionen
-// 1. 2. 2021
+// 3. 11. 2021
 
 "use strict";
 
@@ -163,6 +163,7 @@ JB.GPX2GM.setparameters = function() {
 	JB.GPX2GM.parameters.wpcluster = (typeof(Wpcluster)!="undefined") ? Wpcluster : false;
 	JB.GPX2GM.parameters.bildpfad = (typeof(Bildpfad)!="undefined") ? Bildpfad : "";
 	JB.GPX2GM.parameters.gpxpfad = (typeof(Gpxpfad)!="undefined") ? Gpxpfad : ""; 
+	JB.GPX2GM.parameters.defaulticon = (typeof(Defaulticon)!="undefined") ? Defaulticon : ""; 
 	JB.GPX2GM.parameters.bildwegpunkticon = (typeof(Bildwegpunkticon)!="undefined") ? Bildwegpunkticon : "Bild"; // Bei "" Icon aus sym-Tag
 	JB.GPX2GM.parameters.shtrcmt = (typeof(Shtrcmt)!="undefined") ? Shtrcmt : false;
 	JB.GPX2GM.parameters.shtrdesc = (typeof(Shtrdesc)!="undefined") ? Shtrdesc : false;
@@ -477,6 +478,59 @@ JB.GPX2GM.strings.es = {
 	zoom: "zoom a elemento",
 	all: "Todo",
 	showlist: "Mostrar lista, moverse en la lista con las teclas de flecha"
+}
+// Italienische Übersetzung von Paolo Ferrari
+JB.GPX2GM.strings.it = {
+	lenght: "Lunghezza",
+	way: "Itinerario",
+	duration: "Durata",
+	tstart: "Orario inizio",
+	time: "Tempo",
+	time_unit: "Ore",
+	altdiff: "Dislivello",
+	alt: "Altitudine", //"Altitude",
+	//alt_unit: "m",
+	in: " en ",
+	grade: "Pendenza",
+	grade_unit: "%",
+	avspeed: "Velocità media",
+	speed2: "Velocità istantanea",
+	speed: "V",
+	pace: "Frequenza",  // ritmo
+	hr2: "Frequenza cardiaca",
+	hr: "HR",
+	hr_unit: "1/min",
+	cad: "Cadenza", 
+	cad_unit: "rpm",
+	temp: "Temperatura",
+	wpt: "Waypoint",
+	wpts: "Waypoints",
+	pwpt: "Foto waypoint",
+	trk: "Traccia",
+	trks: "Tracce",
+	rte: "Itinerario",
+	rtes: "Itinerari",
+	inmo: "In movimento",
+	// wait: "Prego attendere.<br />Caricamento dati.",
+	wait: "",  // Wartebild nehmen
+	clkz: "Premere per ingrandire",
+	zb: "Zoom precedente",
+	frage_datenschutz_gm: "Questa pagina utilizza mappe e un'API di Google e possibilmente anche mappe OSM. Questo trasferisce i dati dei visitatori al rispettivo fornitore di servizi. Maggiori informazioni su questo nell'impressum. Siete d'accordo?", 
+	antwort_datenschutz_gm: "L'autorizzazione a utilizzare l'API di Google Maps è stata negata. Puoi cambiare idea quando ricarichi la pagina. ", 
+	frage_datenschutz_osm: "Questa pagina utilizza le mappe OSM. Questo trasferisce i dati dei visitatori al rispettivo fornitore di servizi. Maggiori informazioni su questo nell'impressum. Siete d'accordo?", 
+	antwort_datenschutz_osm: "Il permesso di utilizzare le mappe OSM è stato negato. Puoi cambiare idea quando ricarichi la pagina. ", 
+	fullScreen: "Schermo intero",
+	normalSize: "Dimensione normale",
+	showCurrentLocation: "Vedi posiione attuale",
+	hideCurrentLocation: "Nascondi posizione attuale",
+	showTrafficLayer: "Vedi traffico",
+	hideTrafficLayer: "Nascondi il traffico",
+	noMap: "Nessuna mappa",
+	file: "File",
+	showhide: "Mostra/nascondi",
+	zoom: "Ingrandisci all'elemento",
+	all: "Tutti",
+	showlist: "mostra l'elenco, utilizza i tasti freccia per spostarti nell'elenco "
 }
 
 /* // Autoscale in den Profilen abschalten

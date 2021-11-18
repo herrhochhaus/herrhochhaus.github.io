@@ -2,7 +2,8 @@
 // Lizenz CC BY-NC-SA 4.0
 // Jürgen Berkemeier
 // www.j-berkemeier.de
-// Version 1.11.1 vom 18. 3. 20201
+// Version 1.12 vom 5. 11. 2021
+
 
 "use strict";
 
@@ -12,7 +13,7 @@ window.JB = window.JB || {};
 		JB.Debug_Info("",verstring,false);
 		if(!JB.debuginfo && typeof(console) != "undefined" && typeof(console.info) == "function" )
 			console.info(verstring);
-} )("osmutils 1.11.1 vom 18. 3. 20201");
+} )("osmutils 1.12 vom 5. 11. 2021");
 
 JB.Map = function(makemap) {
 	var dieses = this;
@@ -25,85 +26,78 @@ JB.Map = function(makemap) {
 
 	// Map anlegen
 
-	this.maptypes = {};
-	var baseLayers = {}, overlayLayers = {}, nr=0;
+	const mycp = '<a href="https://www.j-berkemeier.de/GPXViewer" title="GPX Viewer '+JB.GPX2GM.ver+'">GPXViewer</a> | ';
 	
-	var satellit = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+	this.baseLayers = {}; 
+
+	this.baseLayers["Satellit"] = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
 		maxZoom: 21,
-		attribution: 'Map data &copy; <a href="https://www.esri.com/">Esri</a>, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
+		attribution: mycp+'Map data &copy; <a href="https://www.esri.com/">Esri</a>, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community'
 	});
-	this.maptypes.Satellit = [nr++, satellit];
-	baseLayers["Satellit"] = satellit;
 	
-	var osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	this.baseLayers["OSM"] = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 19,
-		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
+		attribution: mycp+'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
 	});
-	this.maptypes.OSM = [nr++, osm];
-	baseLayers["OSM"] = osm;
 
-	var osmde = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
+	this.baseLayers["OSMDE"] = L.tileLayer('https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png', {
 		maxZoom: 19,
-		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
+		attribution: mycp+'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
 	});
-	this.maptypes.OSMDE = [nr++, osmde];
-	baseLayers["OSMDE"] = osmde;
 
-	var opentopo = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
+	this.baseLayers["Open Topo"] = L.tileLayer('https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png', {
 		maxZoom: 17,
-		attribution: 'Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © <a href="https://opentopomap.org/about">OpenTopoMap</a> (CC-BY-SA)'
+		attribution: mycp+'Kartendaten: © OpenStreetMap-Mitwirkende, SRTM | Kartendarstellung: © <a href="https://opentopomap.org/about">OpenTopoMap</a> (CC-BY-SA)'
 	});
-	this.maptypes.OPENTOPO = [nr++, opentopo];
-	baseLayers["Open Topo"] = opentopo;
+	
+	this.baseLayers["TopPlusOpen"] = L.tileLayer('https://sgx.geodatenzentrum.de/wmts_topplus_open/tile/1.0.0/web/default/WEBMERCATOR/{z}/{y}/{x}.png', {
+		maxZoom: 18,
+		attribution: mycp+'Kartendaten: © <a href="https://www.bkg.bund.de/SharedDocs/Produktinformationen/BKG/DE/P-2017/170922-TopPlus-Web-Open.html" target==_blank"">Bundesamt für Kartographie und Geodäsie</a>'
+	});
+	
+	// https://tileserver.4umaps.com/${z}/${x}/${y}.png
+	// zoomlevel 16
+	// https://www.4umaps.com/
 	
 	if(JB.GPX2GM.OSM_Cycle_Api_Key && JB.GPX2GM.OSM_Cycle_Api_Key.length>0) {
-		var osmcycle = L.tileLayer('https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey='+JB.GPX2GM.OSM_Cycle_Api_Key, {
+		this.baseLayers["Cycle"] = L.tileLayer('https://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png?apikey='+JB.GPX2GM.OSM_Cycle_Api_Key, {
 			maxZoom: 22,
-			attribution: 'Map data &copy; <a href="https://www.thunderforest.com/" target="_blank">OpenCycleMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
+			attribution: mycp+'Map data &copy; <a href="https://www.thunderforest.com/" target="_blank">OpenCycleMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
 		});
-		this.maptypes.OSM_Cycle = [nr++, osmcycle];
-		baseLayers["Cycle"] = osmcycle;
 	}
 
 	if(JB.GPX2GM.OSM_Landscape_Api_Key && JB.GPX2GM.OSM_Landscape_Api_Key.length>0) {
-		var osmlandscape = L.tileLayer('https://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey='+JB.GPX2GM.OSM_Landscape_Api_Key, {
+		this.baseLayers["Landscape"] = L.tileLayer('https://{s}.tile.thunderforest.com/landscape/{z}/{x}/{y}.png?apikey='+JB.GPX2GM.OSM_Landscape_Api_Key, {
 			maxZoom: 22,
-			attribution: 'Map data &copy; <a href="https://www.thunderforest.com/" target="_blank">OpenLandscapeMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
+			attribution: mycp+'Map data &copy; <a href="https://www.thunderforest.com/" target="_blank">OpenLandscapeMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
 		});
-		this.maptypes.OSM_Landscape = [nr++, osmlandscape];
-		baseLayers["Landscape"] = osmlandscape;
 	}
 
 	if(JB.GPX2GM.OSM_Outdoors_Api_Key && JB.GPX2GM.OSM_Outdoors_Api_Key.length>0) {
-		var osmoutdoors = L.tileLayer('https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey='+JB.GPX2GM.OSM_Outdoors_Api_Key, {
+		this.baseLayers["Outdoors"] = L.tileLayer('https://{s}.tile.thunderforest.com/outdoors/{z}/{x}/{y}.png?apikey='+JB.GPX2GM.OSM_Outdoors_Api_Key, {
 			maxZoom: 22,
-			attribution: 'Map data &copy; <a href="https://www.thunderforest.com/" target="_blank">OpenOutdoorsMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
+			attribution: mycp+'Map data &copy; <a href="https://www.thunderforest.com/" target="_blank">OpenOutdoorsMap</a> and contributors <a href="https://creativecommons.org/licenses/by-sa/2.0/" target="_blank">CC-BY-SA</a>'
 		});
-		this.maptypes.OSM_Outdoors = [nr++, osmoutdoors];
-		baseLayers["Outdoors"] = osmoutdoors;
 	}
 
-	var grau = L.tileLayer(JB.GPX2GM.Path+"Icons/Grau256x256.png", { maxZoom: 22 });
-	this.maptypes.Keine_Karte = [nr++, grau];
-	baseLayers[JB.GPX2GM.strings[JB.GPX2GM.parameters.doclang].noMap] = grau;
+	this.baseLayers[JB.GPX2GM.strings[JB.GPX2GM.parameters.doclang].noMap]= L.tileLayer(JB.GPX2GM.Path+"Icons/Grau256x256.png", { 
+		maxZoom: 22,
+		attribution: mycp
+	});
 
-	var opensea = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
+	this.overlayLayers = {}; 
+
+	this.overlayLayers["Open Sea"] = L.tileLayer('https://tiles.openseamap.org/seamark/{z}/{x}/{y}.png', {
 		attribution: 'Kartendaten: © <a href="http://www.openseamap.org">OpenSeaMap</a> contributors'
 	});
-	this.maptypes.Open_Sea = [nr++, opensea];
-	overlayLayers["Open Sea"] = opensea;
 
-	var hiking = L.tileLayer('https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png', {
+	this.overlayLayers["Hiking"] = L.tileLayer('https://tile.waymarkedtrails.org/hiking/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://waymarkedtrails.org">Sarah Hoffmann</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
 	});
-	this.maptypes.Hiking = [nr++, hiking];
-	overlayLayers["Hiking"] = hiking;
 	
-	var cycling = L.tileLayer('https://tile.waymarkedtrails.org/cycling/{z}/{x}/{y}.png', {
+	this.overlayLayers["Cycling"] = L.tileLayer('https://tile.waymarkedtrails.org/cycling/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://waymarkedtrails.org">Sarah Hoffmann</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
 	});
-	this.maptypes.Cycling = [nr++, cycling];
-	overlayLayers["Cycling"] = cycling;
 
 	// ['hiking', 'cycling', 'mtb', 'skating', 'slopes', 'riding'];
 	
@@ -129,7 +123,7 @@ JB.Map = function(makemap) {
 	JB.onresize(mapcanvas,function(w,h) {
 		makemap.parameters.showmaptypecontroll = (w>200 && h>190 && showmaptypecontroll_save);
 		if(makemap.parameters.showmaptypecontroll) {
-			if(!ctrl_layer) ctrl_layer = L.control.layers(baseLayers, overlayLayers).addTo(dieses.map);
+			if(!ctrl_layer) ctrl_layer = L.control.layers(dieses.baseLayers, dieses.overlayLayers).addTo(dieses.map);
 		}
 		else {
 			if(ctrl_layer) {
@@ -138,24 +132,6 @@ JB.Map = function(makemap) {
 			}
 		}
 	},true);
-	
-	// Mein Copyright und Versionshinweis
-	L.Control.CP = L.Control.extend({
-		onAdd: function(map) {
-			var jbcp = document.createElement('a');
-			jbcp.href='https://www.j-berkemeier.de/GPXViewer';
-			jbcp.innerHTML = "JB";
-			jbcp.style.color = "white";
-			jbcp.style.textDecoration = "none"; 
-			jbcp.style.margin = " 0 0 0 8px";
-			jbcp.style.fontSize = '10px';
-			jbcp.style.fontFamily = 'Arial, sans-serif';
-			jbcp.title = "GPX Viewer " + JB.GPX2GM.ver;
-			return jbcp;
-		},
-		onRemove: function(map) {}
-	});
-	new L.Control.CP({ position: 'bottomleft' }).addTo(this.map);
 
 	// Button für Full Screen / normale Größe
 	var fullscreen = false;
@@ -169,7 +145,6 @@ JB.Map = function(makemap) {
 		fsbim.width = 31;
 		fsbim.height = 31;
 		fsbim.src = JB.GPX2GM.Path+"Icons/fullscreen_p.svg";
-		//fsbim.width = "200px";
 		fsb.title = fsbim.title = fsbim.alt = JB.GPX2GM.strings[JB.GPX2GM.parameters.doclang].fullScreen;
 		fsbim.large = false;
 		var ele = mapcanvas.parentNode;
@@ -391,42 +366,12 @@ JB.Map.prototype.getZoom = function() {
 
 JB.Map.prototype.change = function(maptype) {
 	var mt = "OSM";
-	if(maptype in this.maptypes) mt = maptype;
-	if(maptype=="Open_Sea" || maptype=="Hiking" || maptype=="Cycling") mt = "OSM";
-	var nr = this.maptypes[mt][0];
-	var type = this.maptypes[mt][1];
-	for(var m in this.maptypes) this.map.removeLayer(this.maptypes[m][1]);
-	if(this.makemap.parameters.showmaptypecontroll) {
-		var layerControlElement = this.mapcanvas.getElementsByClassName('leaflet-control-layers')[0];
-		if(layerControlElement) {
-			var openseacheckbox = layerControlElement.querySelectorAll('input[type=checkbox]')[0];
-			var hikingcheckbox = layerControlElement.querySelectorAll('input[type=checkbox]')[1];
-			var cyclingcheckbox = layerControlElement.querySelectorAll('input[type=checkbox]')[2];
-			if(maptype=="Open_Sea") {
-				if(!openseacheckbox.checked) openseacheckbox.click();
-			}
-			else {
-				if(openseacheckbox.checked) openseacheckbox.click();
-			}
-			if(maptype=="Hiking") {
-				if(!hikingcheckbox.checked) hikingcheckbox.click();
-			}
-			else {
-				if(hikingcheckbox.checked) hikingcheckbox.click();
-			}
-			if(maptype=="Cycling") {
-				if(!cyclingcheckbox.checked) cyclingcheckbox.click();
-			}
-			else {
-				if(cyclingcheckbox.checked) cyclingcheckbox.click();
-			}
-		}
-		else {
-			var dieses = this;
-			window.setTimeout(function(){ dieses.change(maptype);},100);
-		}
+	if(maptype in this.baseLayers) mt = maptype;
+	if(maptype in this.overlayLayers) {
+		this.overlayLayers[maptype].addTo(this.map);
+		mt = "OSMDE";
 	}
-	this.map.addLayer(type);
+	this.baseLayers[mt].addTo(this.map);
 	JB.Debug_Info(this.id,"Maptype, gewählt: "+maptype+", eingestellt: "+mt,false);
 } // change
 
@@ -741,7 +686,7 @@ JB.Map.prototype.Marker_Text = function(coord,icon,titel) {
 	var mapcenter,clk_ev;
 	var marker = this.setMarker(coord,icon,titel);
 	var text = coord.info;
-	marker[0].on("click", function(o) {	
+	marker[0].on("click", function(o) {
 		var retval = true;
 		if(typeof(JB.GPX2GM.callback)=="function") 
 			retval = JB.GPX2GM.callback({type:"click_Marker_Text",coord:coord,titel:titel,text:text,id:dieses.id});
@@ -996,7 +941,7 @@ JB.platzgenug = function(mapdiv) {
 	var screenheight = window.innerHeight;
 	var mapwidth = mapdiv.offsetWidth;
 	var mapheight = mapdiv.offsetHeight;
-	var genugplatz = mapwidth/screenwidth < 0.80;
+	var genugplatz = mapwidth/screenwidth < 0.8;
 	genugplatz |= docheight <= screenheight;
 	genugplatz |= mapheight/screenheight < 0.8;
 	genugplatz = genugplatz?true:false;

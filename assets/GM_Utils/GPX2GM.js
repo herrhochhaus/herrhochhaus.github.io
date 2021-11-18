@@ -3,14 +3,14 @@
 // Lizenz CC BY-NC-SA 4.0
 // Jürgen Berkemeier
 // www.j-berkemeier.de
-// Version 6.13 vom 27. 3. 2021
+// Version 6.15 vom 17. 11. 2021
 
 "use strict";
 
 window.JB = window.JB || {};
 window.JB.GPX2GM = window.JB.GPX2GM || {};
-JB.GPX2GM.ver = "6.13";
-JB.GPX2GM.dat = "27. 3. 2021";
+JB.GPX2GM.ver = "6.15";
+JB.GPX2GM.dat = "17. 11. 2021";
 JB.GPX2GM.fname = "GPX2GM.js";
 JB.GPX2GM.globalMapParameter = {};
 
@@ -305,7 +305,7 @@ JB.makeMap = function (ID) {
 			gpxdaten = pict2WP.call(this,gpxdaten);
 			gpxdaten = div2WP.call(this,gpxdaten);
 			if(this.parameters.tracksort) gpxdaten = sort_tracks.call(this,gpxdaten);
-			gpxdaten = wp_dist.call(this,gpxdaten);
+			if(this.parameters.wpcluster) gpxdaten = wp_dist.call(this,gpxdaten);
 			this.gpxdaten = gpxdaten;
 			setMapHead.call(this);
 			if (this.parameters.legende) {
@@ -334,6 +334,16 @@ JB.makeMap = function (ID) {
 	this.GetMap = function() {
 		return Map;
 	} // GetMap
+	
+	this.removeElements = function() {
+		var i;
+		for(i=0;i<markers.length;i++) JB.RemoveElement(markers[i]);
+		markers = [];
+		for(i=0;i<trackpolylines.length;i++) JB.RemoveElement(trackpolylines[i]);
+		trackpolylines = [];
+		for(i=0;i<routepolylines.length;i++) JB.RemoveElement(routepolylines[i]);
+		routepolylines = [];
+	}
 
 	this.Clear = function() {
 	  var p,pr,i;
@@ -760,7 +770,8 @@ JB.makeMap = function (ID) {
 			markers = markers.concat(mrk);
 		}
 		for(var i=0;i<gpxdaten.wegpunkte.anzahl;i++) {
-			if(gpxdaten.wegpunkte.wegpunkt[i].cluster == -1 && chkwpt.status[gpxdaten.wegpunkte.anzahl==1?0:i+1]) {
+			if( (typeof(gpxdaten.wegpunkte.wegpunkt[i].cluster) == "undefined" || gpxdaten.wegpunkte.wegpunkt[i].cluster == -1) 
+			     && chkwpt.status[gpxdaten.wegpunkte.anzahl==1?0:i+1] ) {
 				mrk = showWpt.call(this,gpxdaten.wegpunkte.wegpunkt[i]);
 				markers = markers.concat(mrk);
 			}
@@ -771,9 +782,18 @@ JB.makeMap = function (ID) {
 	} // showWpts 
 	
 	function showWpt(waypoint) {
+		var icon;
 		var sym = waypoint.sym.toLowerCase() ;
-//		var icon = JB.icons[sym]?JB.icons[sym]:null;
-		var icon = JB.icons[sym]?JB.icons[sym]:waypoint.sym;
+		if(JB.icons[sym]) 
+			icon = JB.icons[sym];
+		else if(sym.length < 3) 
+			icon = waypoint.sym;
+		else if(this.parameters.defaulticon !== "" && this.parameters.defaulticon.length >= 3) 
+			icon = JB.icons[this.parameters.defaulticon.toLowerCase()] ? JB.icons[this.parameters.defaulticon.toLowerCase()] : null;
+		else if(this.parameters.defaulticon !== "" && this.parameters.defaulticon.length < 3) 
+			icon = this.parameters.defaulticon;
+		else 
+			icon = null;
 		JB.Debug_Info(id,"Symbol: "+sym,false);
 		var imgsrc="";
 		if (JB.checkImageName(waypoint.name)) imgsrc = waypoint.name;
@@ -870,14 +890,14 @@ JB.makeMap = function (ID) {
 			}
 		}
 		for(var i=0;i<clusters.length;i++) {
-			var lat=0,lon=0;
+			var av_lat=0,av_lon=0;
 			for(var j=0;j<clusters[i].members.length;j++) {
 				var wp = wps[clusters[i].members[j]];
-				lat += wp.lat;
-				lon += wp.lon;
+				av_lat += wp.lat;
+				av_lon += wp.lon;
 			}
-			clusters[i].lat = lat/clusters[i].members.length;
-			clusters[i].lon = lon/clusters[i].members.length;
+			clusters[i].lat = av_lat/clusters[i].members.length;
+			clusters[i].lon = av_lon/clusters[i].members.length;
 		}
 		JB.Debug_Info(id,clusters.length+" Wegpunktcluster angelegt",false);
 		return clusters;

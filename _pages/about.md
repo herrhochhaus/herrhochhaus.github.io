@@ -8,11 +8,11 @@ permalink: /about/
 Therefore all progress depends on the unreasonable man.
 ](https://www.goodreads.com/quotes/536961-the-reasonable-man-adapts-himself-to-the-world-the-unreasonable)
 
-Hi, mein Name ist Hochhaus und seit über 20 Jahren schreibe ich mal nützliche und mal belanglose Dinge ins World Wide Web. Bisweilen findet das jemand nützlich und freut sich vielleicht. 
+Hi, mein Name ist Hochhaus und seit über 20 Jahren schreibe ich mal nützliche und mal belanglose Dinge ins World Wide Web. Bisweilen findet das jemand nützlich und freut sich vielleicht.
 
 ![Herr Hochhaus schreibt](/images/herrhochhausschreibt.png){: style="float: left; margin-right: 1em;"}
 
-Ich mag Technik und arbeite tagsüber daran, das Internet der Dinge zu bevölkern. Irgendwann habe ich mal [ein Buch über Programmierung mit JavaScript geschrieben](https://www.manning.com/books/meteor-in-action), [The Next Web in Deutschland unterstützt](https://thenextweb.com/author/stephanhochhaus), [ein mobiles Geo-Game konzipiert](https://www.youtube.com/watch?v=PuaYI4n3w5o) und ein Unternehmen gegründet (bis auf [wenige Spuren](https://www.faz.net/aktuell/technik-motor/markennamen-gib-mir-ein-o-12040868.html) ist das erfolgreich aus dem Netz gelöscht).
+Ich mag Technik und arbeite tagsüber daran, die Welt digitaler zu machen. Irgendwann habe ich mal [ein Buch über Programmierung mit JavaScript geschrieben](https://www.manning.com/books/meteor-in-action), [The Next Web in Deutschland unterstützt](https://thenextweb.com/author/stephanhochhaus), [ein mobiles Geo-Game konzipiert](https://www.youtube.com/watch?v=PuaYI4n3w5o) und ein Unternehmen gegründet (bis auf [wenige Spuren](https://www.faz.net/aktuell/technik-motor/markennamen-gib-mir-ein-o-12040868.html) ist das erfolgreich aus dem Netz gelöscht).
 
 Wenn ich nicht arbeite, dann interessiere ich mich für Gadgets, Kettlebells, Musik - am liebsten mit Schlagzeug, [Podcasts](/podcasts) und Pen-and-paper Rollenspiele.
 

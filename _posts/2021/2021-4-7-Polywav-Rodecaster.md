@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Mein Podcast-Workflow mit dem Rodecaster Pro
-categories: [podcast, technik]
+categories: [audio]
 excerpt: Das Rodecaster Pro nimmt Podcasts ganz ohne Computer auf. Allerdings gibt es ein paar Kniffe, die im Workflow etwas Handarbeit erfordern.
 ---
 

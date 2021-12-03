@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Soundcheck - Klangvergleich für Video-Calls
-categories: [gadgets]
+categories: [audio]
 excerpt: Nachdem Videocalls der neue Standard für geschäftliche Treffen geworden sind, spielt die Tonqualität des eigenen Equipments eine zentrale Rolle, um ermüdungsfreie Meetings zu ermöglichen. Doch wie klingt eigentlich das eigene Equipment?
 ---
 

@@ -23,6 +23,6 @@ Mein Geheimrezept für mentalen Ausgleich im Home Office ist morgens und abends 
 
 ## Platz 1: Ein kabelloses Headset
 
-Bewegungsfreiheit und Audioqualität sind für mich im Home Office unverzichtbar. [Mein Lieblingsheadset]({% post_url 2021-8-16-Audio-im-Vergleich %}) ist ein kabelloses Bluetooth-Headset mit Noice Cancelling (welches im Home Office nicht so wichtig ist). Bis zur Küche zum Tee oder Kaffee holen sollte es reichen, dann können die Konferenzen ruhig auch den ganzen Tag dauern. Nene, Scherz. Lieber nicht.
+Bewegungsfreiheit und Audioqualität sind für mich im Home Office unverzichtbar. [Mein Lieblingsheadset]({% post_url 2021/2021-8-16-Audio-im-Vergleich %}) ist ein kabelloses Bluetooth-Headset mit Noice Cancelling (welches im Home Office nicht so wichtig ist). Bis zur Küche zum Tee oder Kaffee holen sollte es reichen, dann können die Konferenzen ruhig auch den ganzen Tag dauern. Nene, Scherz. Lieber nicht.
 
 Und was sind **eure Tips** für das Home Office?

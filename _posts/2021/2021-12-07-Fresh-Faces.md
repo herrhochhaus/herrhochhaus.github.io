@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Fresh Faces - Made by AI
-categories: [arbeiten]
+categories: [digital]
 excerpt: Manchmal braucht man einfach ein Profilbild, fürs Internet oder das Persona-Sheet. Manchmal sind computergenerierte Gesichter die bessere Wahl.
 ---
 

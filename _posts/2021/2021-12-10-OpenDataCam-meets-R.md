@@ -33,7 +33,7 @@ Der erste Wert is die **frameId**, als der eindeutige Identifier, welches Bild z
 
  Pro Kamera lassen sich mehrere Counter definieren, die dritte Spalte gibt den **counterId** an. In meiner Installation hat er die Default-Bezeichnung "grenze".
 
-{% include lightbox.html src="opendatacamcounterid.png" data="group" title="Ein klick auf die Counter-Linie offenbart die Bezeichnung" %}{: style="max-width: 750px;"}
+{% include lightbox.html src="opendatacamcounterid.jpg" data="group" title="Ein klick auf die Counter-Linie offenbart die Bezeichnung" %}{: style="max-width: 750px;"}
 
 Es folgen **objectClass** (Auto, Fußgänger, Fahrrad, etc.), eine **objectId** (das wievielte gezählte Objekt innerhalb dieser Zählsession). Diese sind nicht eindeutig, wenn man mehrere Events verarbeitet.
 
@@ -104,7 +104,7 @@ Für `hourOfDay` gehen wir einen Umweg über `ymdhms`, da der direkte Zugriff au
 
 ### Daten prüfen
 
-{% include lightbox.html src="truck_or_car.png" data="group" title="Trefferwahrscheinlichkeiten bei der Objekterkennung variieren stark" %}{: style="max-width: 750px;"}
+{% include lightbox.html src="truck_or_car.jpg" data="group" title="Trefferwahrscheinlichkeiten bei der Objekterkennung variieren stark" %}{: style="max-width: 750px;"}
 
 Auch wenn OpenDataCam gute Ergebnisse bei der Erkennung von Objekten liefert, sind diese Daten nicht immer korrekt. Bei dem Jeep oben ist sich das System zu 59% sicher, dass es sich um einen Truck handelt. Ein parkendes Auto hinten rechts erkennt es mit 30% Wahrscheinlichkeit. Allerdings sieht es eher nach dem Vorderteil eines Autos mit dem Hinterteil eines anderen Autos aus.
 

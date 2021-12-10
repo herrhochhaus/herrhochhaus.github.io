@@ -2,7 +2,7 @@
 layout: post
 title:  OpenDataCam meets R
 categories: [digital]
-excerpt: Nachdem ich OpenDataCam mit OpenDataCam mehr als 20.000 Vehikel gezählt habe, probiere ich die Daten auszuwerten.
+excerpt: Nachdem ich OpenDataCam mit OpenDataCam mehr als 20.000 Vehikel gezählt habe, probiere ich, die Daten auszuwerten.
 ---
 
 {% include lightbox.html src="opendatacamcounters.png" data="group" title="Einige Tausend Fahrzeuge hat OpenDataCam in den letzten Tagen gezählt" %}{: style="float: right; margin-left: 1em; max-width: 250px;"}

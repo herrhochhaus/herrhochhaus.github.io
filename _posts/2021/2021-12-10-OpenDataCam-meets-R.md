@@ -174,6 +174,6 @@ Beide Plots erscheinen in RStudio auf der rechten Seite und lassen sich mit dem 
 
 Wie man sieht, sind die Plots sehr rudimentär. Wie bereits erwähnt, dienten sie mir mehr als Vorwand, mich mit R zu beschäftigen und bieten eigentlich noch Potential nach oben.
 
-Wie üblich, finden sich der gesamte Code auf [auf github im Repository yauh/opendatacam-statistics](https://github.com/yauh/opendatacam-statistics). Neben dem Code finden sich dort auch Beispieldaten aus OpenDataCam, für diejenigen, die zwar keine eigene Zählung durchführen, aber dennoch gerne mit den Daten spielen möchten.
+Wie üblich, finden sich der gesamte Code [auf github im Repository yauh/opendatacam-statistics](https://github.com/yauh/opendatacam-statistics). Neben dem Code finden sich dort auch Beispieldaten aus OpenDataCam, für diejenigen, die zwar keine eigene Zählung durchführen, aber dennoch gerne mit den Daten spielen möchten.
 
 Ich freue mich über Anmerkungen, Verbesserungsvorschläge und natürlich Pull-Requests.

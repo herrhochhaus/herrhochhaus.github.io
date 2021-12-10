@@ -142,7 +142,7 @@ countsByHour <- table(odcCountsOnlyVehicles$hourOfDay)
 ```r
 barplot(countsByHour,
   names.arg=rownames(countsByHour),
-  xlab="Day of week",
+  xlab="Hour of Day",
   ylab="Count")
 ```
 

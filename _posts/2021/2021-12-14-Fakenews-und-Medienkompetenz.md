@@ -11,7 +11,7 @@ Ein Artikel im Satiremagazin [Der Postillion](https://www.der-postillon.com/2021
 
 <blockquote class="twitter-tweet"><p lang="de" dir="ltr">Wird immer besser... <a href="https://t.co/y4p3noXCMk">pic.twitter.com/y4p3noXCMk</a></p>&mdash; Knoettka (@knoettka) <a href="https://twitter.com/knoettka/status/1469815591787798537?ref_src=twsrc%5Etfw">11. Dezember 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-Es scheint, dass diejenigen, die für die Medienkompetenz der jüngeren Generationen zuständige Eltern- und Großelternfaktion selbst gar nicht mal so gut im Umgang mit Fakenews und der Einordnung von glaubhaften Quellen und Querdenker-Geschwurbel ist. Quellenkritik, Textanalysen, ja selbst simpelste Plausibilitätschecks versagen bei vielen im Kopf, wenn sie mit einer digitalen Headline konfrontiert werden. [Bei #5 habe ich geweint](https://de.wikipedia.org/wiki/Clickbaiting).
+Es scheint, dass die für die Medienkompetenz der jüngeren Generationen zuständige Eltern- und Großelternfaktion selbst gar nicht mal so gut im Umgang mit Fakenews und der Einordnung von glaubhaften Quellen und Querdenker-Geschwurbel ist. Quellenkritik, Textanalysen, ja selbst simpelste Plausibilitätschecks versagen bei vielen im Kopf, wenn sie mit einer digitalen Headline konfrontiert werden. [Bei #5 habe ich geweint](https://de.wikipedia.org/wiki/Clickbaiting).
 
 Woran es genau liegt, dass die vermeintlich einfache Unterscheidung zwischen Wahrheit und Lüge so kompliziert ist, kann ich auch nicht sagen. Oder wie es im [25. Scheibenwelt-Roman "Die volle Wahrheit"](https://www.goodreads.com/book/show/513475.Die_volle_Wahrheit) so schön heißt:
 

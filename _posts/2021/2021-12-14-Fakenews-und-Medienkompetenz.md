@@ -5,7 +5,7 @@ categories: [soziales]
 excerpt: Früher war alles wahr, was im Fernsehen lief. Wirklich? Und was heute bei Facebook steht stimmt, oder doch nicht?
 ---
 
-Die [Urban Legend der Familie im Supermarkt, die eigentlich in Quarantäne sein sollte](https://www.donaukurier.de/nachrichten/panorama/Covid-19-Wahrheit-oder-Fake-News-Ingolstaedter-AErztin-enttarnt-Quarantaene-Brecher-in-Supermarkt;art154670,4833284) wurde mir inzwischen in mindestens einem Dutzen verschiedener Variationen berichtet, immer über eine Bekannte deren Schwester von der die Omma hatte einen Nachbarn der das wirklich erlebt hat. Na klar.
+Die [Urban Legend der Familie im Supermarkt, die eigentlich in Quarantäne sein sollte](https://www.donaukurier.de/nachrichten/panorama/Covid-19-Wahrheit-oder-Fake-News-Ingolstaedter-AErztin-enttarnt-Quarantaene-Brecher-in-Supermarkt;art154670,4833284) wurde mir inzwischen in mindestens einem Dutzend verschiedener Variationen berichtet, immer über eine Bekannte deren Schwester von der die Omma hatte einen Nachbarn der das wirklich erlebt hat. Na klar.
 
 Ein Artikel im Satiremagazin [Der Postillion](https://www.der-postillon.com/2021/12/muuh.html) mit einem Hauch Photoshop und schon gehen die Boomer mit gefährlicher Halbkompetenz im medialen Raum steil. [Das originale Bild der Vereidigung des neuen Landwirtschaftsministers](https://www.agrarheute.com/politik/cem-oezdemir-will-oberster-anwalt-landwirte-588251) kennt von ihnen vermutlich kaum jemand.
 

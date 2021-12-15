@@ -2,7 +2,7 @@
 layout: post
 title:  Livestreams mit RTMP, RTSP und GoPro Hero 10
 categories: [gadgets]
-excerpt: Let's stream
+excerpt: Wenn die GoPro mal nicht im harten Action-Einsatz ist, kann man sich - mit ein paar Umwegen - auch als IP-Kamera einsetzen.
 ---
 
 Die GoPro Hero 10 ist eine Action-Cam, der es nicht wild genug zugehen kann. Aber zwischen den wilden Einsätzen könnte sie doch auch einen Day-Job verrichten, oder? Einen Livestream von der GoPro abzugreifen funktioniert leider nicht out-of-the-box und braucht ein paar kleine Handgriffe.

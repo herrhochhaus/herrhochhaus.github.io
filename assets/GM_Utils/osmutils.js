@@ -2,8 +2,7 @@
 // Lizenz CC BY-NC-SA 4.0
 // Jürgen Berkemeier
 // www.j-berkemeier.de
-// Version 1.12 vom 5. 11. 2021
-
+// Version 1.14 vom 11. 2. 2022
 
 "use strict";
 
@@ -13,7 +12,7 @@ window.JB = window.JB || {};
 		JB.Debug_Info("",verstring,false);
 		if(!JB.debuginfo && typeof(console) != "undefined" && typeof(console.info) == "function" )
 			console.info(verstring);
-} )("osmutils 1.12 vom 5. 11. 2021");
+} )("osmutils 1.13 vom 9. 2. 2022");
 
 JB.Map = function(makemap) {
 	var dieses = this;
@@ -98,6 +97,26 @@ JB.Map = function(makemap) {
 	this.overlayLayers["Cycling"] = L.tileLayer('https://tile.waymarkedtrails.org/cycling/{z}/{x}/{y}.png', {
 		attribution: '&copy; <a href="http://waymarkedtrails.org">Sarah Hoffmann</a> (<a href="https://creativecommons.org/licenses/by-sa/3.0/">CC-BY-SA</a>)',
 	});
+	
+	this.layerNameTranslate = {
+		satellit: "Satellit",
+		satellite: "Satellit",
+		osm: "OSM",
+		osmde: "OSMDE",
+		opentopo: "Open Topo",
+		topplusopen: "TopPlusOpen",
+		cycle: "Cycle",
+		landscape: "Landscape",
+		outdoors: "Outdoors",
+		keinekarte: "Keine Karte",
+		pasdecarte: "Pas de carte",
+		nomap: "No Map",
+		ning\u00FAnmapa: "Ning\u00FAn Mapa",
+		nessunamappa: "Nessuna mappa",
+		opensea: "Open Sea",
+		hiking: "Hiking",
+		cycling: "Cycling",
+	}
 
 	// ['hiking', 'cycling', 'mtb', 'skating', 'slopes', 'riding'];
 	
@@ -364,11 +383,12 @@ JB.Map.prototype.getZoom = function() {
 	return {zoom:this.map.getZoom(),maxzoom:this.map.getMaxZoom()}; 
 }
 
-JB.Map.prototype.change = function(maptype) {
-	var mt = "OSM";
-	if(maptype in this.baseLayers) mt = maptype;
-	if(maptype in this.overlayLayers) {
-		this.overlayLayers[maptype].addTo(this.map);
+JB.Map.prototype.change = function(maptype) { 
+	var mt_strip = maptype.toLowerCase().replace(/(^osm_)|(^osm )|(^osm-)/, "").replace(/( )|(_)|(-)/g, "");
+	var mt_translate = (mt_strip in this.layerNameTranslate) ? this.layerNameTranslate[mt_strip] : "OSM";
+	var mt = (mt_translate in this.baseLayers) ? mt_translate : "OSM";
+	if(mt_translate in this.overlayLayers) {
+		this.overlayLayers[mt_translate].addTo(this.map);
 		mt = "OSMDE";
 	}
 	this.baseLayers[mt].addTo(this.map);
@@ -426,7 +446,6 @@ JB.Map.prototype.rescale = function(gpxdaten) {
 } // rescale
 
 JB.Map.prototype.infowindow = function(info,coord) {
-//	var popup = L.popup({maxWidth: this.map.getContainer().offsetWidth-200, autoClose: false }) 
 	var popup = L.popup({maxWidth: this.map.getContainer().offsetWidth*0.8, 
 	                     maxHeight: this.map.getContainer().offsetHeight*0.9, autoClose: false }) 
 		.setLatLng(coord);
@@ -588,6 +607,7 @@ JB.Map.prototype.Polyline = function(daten,controls,route_oder_track,cols,click_
 JB.Map.prototype.setMarker = function(coord,icon,title) {
 	var marker = [];
 	var tooltipoffset = [0,-15];
+	const emoji_test = /\p{Extended_Pictographic}/ug;
 	if(icon) {
 		if(typeof(icon) == "object") {
 			var options = {popupAnchor: [-3, -76]};
@@ -613,8 +633,7 @@ JB.Map.prototype.setMarker = function(coord,icon,title) {
 			var thisicon = new thisIcon();
 			marker[0] = L.marker(coord, {icon: thisicon, title: title, zIndexOffset: 500} ); 
 		}
-//		else if(typeof(icon) == "string" && icon.length && 0xD800 <= icon.charCodeAt(0) && icon.charCodeAt(0) <= 0xDBFF) { // Mehr-Byte-Unicode
-		else if(typeof(icon) == "string" && icon.length < 3) { // Kurzer String oder Emoji
+		else if( typeof(icon) == "string" && ( icon.length <= 3 || emoji_test.test(icon) ) ) { // Kurzer String oder Emoji
 			var html = "<div style='position: absolute; font-size: 3em; transform: translate(-50%, -50%)'>"+icon+"</div>"
 			var thisicon = L.divIcon({className:"JBtext-icon", html: html, iconAnchor: [0, 0] });
 			marker[0] = L.marker(coord, {icon: thisicon, title: title});

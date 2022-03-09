@@ -3,14 +3,14 @@
 // Lizenz CC BY-NC-SA 4.0
 // Jürgen Berkemeier
 // www.j-berkemeier.de
-// Version 6.15 vom 17. 11. 2021
+// Version 6.16 vom 11. 2. 2022
 
 "use strict";
 
 window.JB = window.JB || {};
 window.JB.GPX2GM = window.JB.GPX2GM || {};
-JB.GPX2GM.ver = "6.15";
-JB.GPX2GM.dat = "17. 11. 2021";
+JB.GPX2GM.ver = "6.16";
+JB.GPX2GM.dat = "8. 2. 2022";
 JB.GPX2GM.fname = "GPX2GM.js";
 JB.GPX2GM.globalMapParameter = {};
 
@@ -783,18 +783,21 @@ JB.makeMap = function (ID) {
 	
 	function showWpt(waypoint) {
 		var icon;
-		var sym = waypoint.sym.toLowerCase() ;
+		const emoji_test = /\p{Extended_Pictographic}/ug;
+		var sym = waypoint.sym ; console.log(sym,sym.length);
 		if(JB.icons[sym]) 
 			icon = JB.icons[sym];
-		else if(sym.length < 3) 
+		else if(JB.icons[sym.toLowerCase()]) 
+			icon = JB.icons[sym.toLowerCase()];
+		else if(emoji_test.test(sym) || sym.length <= 3) 
 			icon = waypoint.sym;
-		else if(this.parameters.defaulticon !== "" && this.parameters.defaulticon.length >= 3) 
-			icon = JB.icons[this.parameters.defaulticon.toLowerCase()] ? JB.icons[this.parameters.defaulticon.toLowerCase()] : null;
-		else if(this.parameters.defaulticon !== "" && this.parameters.defaulticon.length < 3) 
+		else if(this.parameters.defaulticon !== "" && ( this.parameters.defaulticon.length <= 3 || emoji_test.test(this.parameters.defaulticon) ) ) 
 			icon = this.parameters.defaulticon;
+		else if(this.parameters.defaulticon !== "" && this.parameters.defaulticon.length > 3) 
+			icon = JB.icons[this.parameters.defaulticon.toLowerCase()] ? JB.icons[this.parameters.defaulticon.toLowerCase()] : null;
 		else 
 			icon = null;
-		JB.Debug_Info(id,"Symbol: "+sym,false);
+		JB.Debug_Info(id,"Symbol: "+sym,false); console.log("Symbol: "+icon);
 		var imgsrc="";
 		if (JB.checkImageName(waypoint.name)) imgsrc = waypoint.name;
 		else if (JB.checkImageName(waypoint.link)) imgsrc = waypoint.link;
@@ -1317,6 +1320,7 @@ JB.makeMap = function (ID) {
 		var info = trackpointinfo(a);
 		Map.gminfowindow(info,a);
 	} // markerclick
+
 	function trackpointinfo(a) {
 		var info = "";
 		if(dieses.parameters.shtrx)                                    info += strings.way+":&nbsp;"+a.x.toFixed(1)+units.way;

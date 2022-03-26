@@ -36,16 +36,16 @@ Der Plan ([lade dir hier das Cheat Sheet herunter](/files/kb_timeless_simple_che
 
 ## Dry Fighting Weight (DFF) by Geoff Neupert
 
-Geoff Neupert ist ein Coach bei StrongFirst und hat das berühmte DFW-Programm entwickelt. (Details dazu in diesem Blogpost)[https://www.strongfirst.com/dry-fighting-weight/].
+Geoff Neupert ist ein Coach bei StrongFirst und hat das berühmte DFW-Programm entwickelt. [Details dazu in diesem Blogpost](https://www.strongfirst.com/dry-fighting-weight/).
 
 Ähnlich wie beim Simple & Sinister gibt es im wesentlichen nur zwei Übungen:
 
 - Clean & Press
 - Front Squad
 
-Allerdings werden die Übungen idealerweise mit zwei gleichen Kettlebells durchgeführt. Zunächst gilt es, das eigene RM (Repetition Max) herauszufinden. Nimm hierzu das Gewicht, welches du fünfmal pressen kannst, nicht weniger (und bestenfalls nicht sonderlich viel mehr).
+Allerdings werden die Übungen idealerweise mit zwei (gleich schweren) Kettlebells durchgeführt. Zunächst gilt es, das eigene RM (Repetition Max) herauszufinden. Nimm hierzu das Gewicht, welches du fünfmal pressen kannst, nicht weniger (und bestenfalls nicht sonderlich viel mehr).
 
-Das Training umfasst fünf Wochen und besteht entweder aus Ladders (erst Set mit 1 Wiederholung, dann 2, dann 3, dann 2, dann 1 - Repeat!) oder Sets (jeweils 1, 2 oder 3 Wiederholungen pro Set). Führe zunächste ein Set Clean & Press aus, dann Front Squads. Pause. Wie lange soll die Pause sein? Nicht zu kurz und nicht zu lang, Geoff empfiehlt so viele Wiederholungen wie möglich und gleichzeitig so "frisch" wie möglich zu bleiben. Nach 30 Minuten ist das Training vorbei.
+Das Training umfasst fünf Wochen und besteht entweder aus Ladders (erst Set mit 1 Wiederholung, dann 2, dann 3, dann 2, dann 1 - Repeat!) oder Sets (jeweils 1, 2 oder 3 Wiederholungen pro Set). Führe zunächst ein Set [Clean & Press](https://www.youtube.com/watch?v=48qvCvJJr8Y&t=361s) aus, dann [Front Squads](https://www.youtube.com/watch?v=wRmiqpizfNM). Pause. Wie lange soll die Pause sein? Nicht zu kurz und nicht zu lang, Geoff empfiehlt so viele Wiederholungen wie möglich und gleichzeitig so "frisch" wie möglich zu bleiben. Nach 30 Minuten ist die Trainingseinheit vorbei.
 
 Die Wochen gliedern sich wie folgt:
 
@@ -64,3 +64,7 @@ Die Wochen gliedern sich wie folgt:
     {% endtablerow %}
   {% endfor %}
 </table>
+
+### Besonderheiten:
+
+In Woche 4 versuchen, die Ladders bis zur 5 zu steigen. Falls das nicht klappt, reicht auch 1-4. Woche 5 ist eigentlich keine Trainingswoche, sondern Einheit 1 ist mit dem 3x3 ein Deload für 3 Sätze a 3 Wiederholungen. Einheit 2 in Woche 5 ist dann der Test, was das neue Repetition Maximum (RM) ist.

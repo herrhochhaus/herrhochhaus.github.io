@@ -26,10 +26,12 @@ footer-links:
   flickr:
   github:
   instagram: herrhochhaus
+  mastodon_username: HerrHochhaus
+  mastodon_instance: home.social
   linkedin:
   pinterest:
   rss: rss
-  twitter: herrhochhaus
+  twitter:
   stackoverflow:
   youtube: # channel/<your_long_string> or user/<user-name>
   googleplus: # anything in your profile username that comes after plus.google.com/

@@ -102,3 +102,7 @@ display.show()
 Mittels Mu muss diese Datei auf den ESP8266 kopiert werden und kann ausgeführt werden.
 
 ![Kopieren von Dateien in Mu](/images/upload_mainpy.gif)
+
+## Hier geht's weiter
+
+Soweit, so gut. Jetzt braucht es nur noch ein paar zusätzliche Sensoren und Funktionen - [der Code findet sich wie immer drüben](https://github.com/yauh/nodemcu).

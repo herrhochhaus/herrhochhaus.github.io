@@ -1,12 +1,12 @@
 ---
 layout: post
-title: 12 Monate nichts kaufen - August
+title: 12 Monate nichts kaufen - September
 categories: [lifestyle]
-excerpt: Der Augustbericht zum Neujahrsvorsatz, keine Neuanschaffungen im Jahr 2023 zu tätigen.
+excerpt: Der Septemberbericht zum Neujahrsvorsatz, keine Neuanschaffungen im Jahr 2023 zu tätigen.
 ---
 
-Die Sommerflaute hat meine Kaufmotivation positiv beeinflusst und es gar wenige Ausrutscher im August. Neben ein paar Geschenken - die ja nicht zählen, weil es keine Anschaffungen für mich sind - gab es mit einem Drum Practice Pad eine einzige kleine Neuanschaffung.
+Die verflixte 9, der von mir bereits vorhergesehene Schicksalsmonat ist vorbei. Dank meines Geburtstags und der vergleichsweise langen - und überwiegend erfolgreichen - Konsumabstinenz wurde ich wie befürchtet etwas schwächer.
 
-Das E-Drum steht im Wohnzimmer und daran zu spielen stört mitunter andere Familienmitglieder, also habe ich für das Schlafzimmer jetzt ein Practice Pad mit Ständer für die gepflegte Rudiments-Runde zwischendurch. Ehrlicherweise kann ich an einer Hand abzählen, wie oft es bisher zum Einsatz kam. Da geht noch was.
+Größte Anschaffung im September war sicherlich meine neue Arbeitstasche von Bellroy: [die System Messenger Bag](https://de.bellroy.com/products/system-messenger-bag). Wollpullover und Taschen kann man ja nie genug haben und nachdem ich meinen Rucksack für die Arbeit zwar weiterhin sehr gut finde, würde ich doch gerne mehr Krempel transportieren und auf diesen mit einer größeren Öffnung leichter zugreifen können. Um Versandkosten zu sparen habe ich auch gleich Ersatz für meine mittlerweile im zweiten Jahrzehnt befindliche Kulturtasche beschafft. Zwei Neuanschaffungen, denn die alten Taschen würden gut und gerne noch ein paar Jahre mitmachen.
 
-Als Ausblick in den September sehe ich schon, dass dieser Monat vermutlich mein Kryptonit des Jahresvorsatzes darstellt. Wir werden sehen.
+Zusätzlich gab es noch ein überflüssiges Bandshirt - yeah - Ersatz für meinen inzwischen nahezu gefährlichen Barttrimmer - autsch - und einen Ab-Roller, da [Dan John ihn wie sauer Bier anpreist](https://www.youtube.com/watch?v=GlXaCaPILWk) - ächz. Ach ja - und eine Organizertasche für die neue Tasche, um Kabel und Klönkram halbwegs organisiert zu transportieren.

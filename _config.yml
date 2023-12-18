@@ -94,6 +94,9 @@ include: ['_pages']
 paginate: 6
 paginate_path: /page:num/
 
+feed:
+  posts_limit: 200
+
 # Exclude these files from your production _site
 exclude:
   - Gemfile
